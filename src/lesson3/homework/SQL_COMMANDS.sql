@@ -58,6 +58,14 @@ VALUES (8, 'comp', 'japan', 90);
 INSERT INTO product
 VALUES (9, 'sofa', 'france', 100);
 
+SELECT * FROM product WHERE cost_price  = 50 AND NAME =  'radio';
+
+SELECT * FROM product WHERE id = 1050 OR cost_price <  50;
+
+SELECT * FROM product WHERE ID  > 5 AND manufacturer_name =  'germany';
+
+SELECT * FROM product;
+
 UPDATE product SET manufacturer_name = 'china' WHERE NAME = 'phone';
 
 DELETE product WHERE id < 15;
