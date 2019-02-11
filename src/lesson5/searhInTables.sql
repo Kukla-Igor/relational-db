@@ -1,0 +1,6 @@
+SELECT DIRECTOR FROM movie
+GROUP BY DIRECTOR;
+
+SELECT DIRECTOR, SUM(DOMESTIC_SALES), SUM(INTERNATIONAL_SALES) FROM movie, movie_stat
+WHERE movie.id = movie_stat.movie_id
+GROUP BY movie.director
