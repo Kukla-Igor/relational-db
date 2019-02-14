@@ -1,4 +1,4 @@
-package lesson6.homework.products;
+package lesson6.homework.products.java;
 
 public class Products {
 
